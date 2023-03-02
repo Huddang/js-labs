@@ -1,55 +1,53 @@
-// Write a function to check if a number a positive even number 
-// If yes, return true. Otherwise return false
+// Write a function to check if a number a positive even number
+// Viết 1 function để kiểm tra xem hàm đó có phải là 1 số dương chẳn hay ko
 
-// tao test
+// If yes, return true. Otherwise return false
+//Nếu đúng, return true. Nếu ko là return false
+
 // flag
 // v1
-function isPositiveEvenNumber(n) {
- let isValid; // underfined
+function isPositiveEvenNumber01(n) {
+  let isValid; // underfined
 
- // checking ...
- if (n >0 && n % 2 === 0) {
-     isValid = true;    
- } else {
-     isValid = false;
- }
+  // checking ...
 
- return isValid;
+  // vesion 1
+
+  if (n > 0 && n % 2 === 0) {
+    isValid = true;
+  } else {
+    isValid = false;
+  }
+
+  return isValid;
 }
 
-//v2
-function isPositiveEvenNumber(n) {
- let isValid = false;
+//vesion 2
+function isPositiveEvenNumber0(n) {
+  let isValid = false;
 
-// checking ...
- if (n >0 && n % 2 === 0) {
-     isValid = true;    
- } 
+  // checking ...
+  if (n > 0 && n % 2 === 0) {
+    isValid = true;
+  }
 
- return isValid;
+  return isValid;
 }
+
+console.log(isPositiveEvenNumber0(4));
 
 // v3
-function isPositiveEvenNumber(n) {
+function isPositiveEvenNumber1(n) {
+  // checking ...
+  if (n > 0 && n % 2 === 0) {
+    return true;
+  }
 
-// checking ...
- if (n >0 && n % 2 === 0) {
-  return true;
- } 
-
- return false;
+  return false;
 }
 // v4
-function isPositiveEvenNumber(n) {
- return n >0 && n % 2 === 0;
+function isPositiveEvenNumber2(n) {
+  return n > 0 && n % 2 === 0;
 }
 
-console.log(isPositiveEvenNumber(4));
-
-
-
-
-
-
-
-
+console.log(isPositiveEvenNumber01(4));
